@@ -1,0 +1,81 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+header {
+    background-image: url('cover.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+    padding: 10px;
+    height: 430px;
+}
+
+.nav1 {
+    position: absolute;
+    bottom: 20px; /* Place buttons near the bottom of the header */
+    left: 50%;
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    display: flex;
+    gap: 334px; /* Space between the buttons */
+}
+
+.nav1 button {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.nav1 button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.nav2 {
+    display: flex;
+    justify-content:center;
+    gap: 1100px;
+    margin-top: 10px;
+}
+
+.nav2 button {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav2 button:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-text {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    letter-spacing: 20px;
+    white-space: nowrap;
+}
+
+.main-text::after {
+    content: 'EARLY WARNING SYSTEM'; 
+    display: block;
+    color: rgba(255, 255, 255, 0.5); 
+    text-shadow: 500px;
+    transform: scaleY(-1); 
+    position: relative;
+    font-family: 'Playfair Display', sans-serif;
+    top: -17px; 
+    font-size: 70px; 
+    opacity: 0.5;
+}
